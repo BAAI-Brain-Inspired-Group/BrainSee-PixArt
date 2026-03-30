@@ -4,10 +4,14 @@
 Our model is built upon our trained modular Hypercolumn-like features and ControlNet. The hypercolumn-like features are trained using a self-supervised method. Based on these features, we train conditional Pixart. In reference time, it can spontaneously exhibit image editing capabilities.
 
 ### installation
+```
 pip install -r requirements.txt
+```
 
 ### Training
+```
 sh train.sh
+```
 
 ### Inference
 #### Prepare data
@@ -18,7 +22,9 @@ write image path and prompt text into './asset/sample_3.txt'
 ![text](./asset/samples_3.txt)
 
 #### Run
+```
 python ./scripts/inference_cross_lora.py
+```
 
 #### Result
 Generated image is saved in './output/txt-img/vis/2025-08-08_custom_epoch144_step133200_scale4.5_step20_size256_bs1_sampdpm-solver_seed0'
